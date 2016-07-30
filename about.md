@@ -1,154 +1,148 @@
 ---
-layout: primer_sidebar
+layout: primer_full
 title: About
 permalink: /about
 ---
 
-# Markdown
-
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-<span class="octicon octicon-mark-github"></span> /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-<span class="octicon octicon-mark-github"></span> /
-[jekyll](https://github.com/jekyll/jekyll)
-
-# Layout
+<h1 class="page-title">
+About
+</h1>
 <div class="markdown-body">
-  <p>Primer’s layout includes basic page containers and a single-tiered, fraction-based grid system. That sounds more complicated than it really is though—it’s just containers, rows, and columns.</p>
+<p>Learn more about this styleguide, particularly how it’s built and who maintains it.</p>
 
-<p>You can find all the below styles in <code class="highlighter-rouge">_layout.scss</code>.</p>
+<h3 id="what-and-why">What and why</h3>
 
-<h2 id="contents">Contents</h2>
+<p>Primer is GitHub’s internal CSS framework. It includes basic global styling for typography, small components like buttons and tabs, and our general guidelines for writing HTML and CSS. It’s been used internally at GitHub for years now.</p>
 
-<ul id="markdown-toc">
-<li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-<li><a href="#container" id="markdown-toc-container">Container</a></li>
-<li><a href="#grid" id="markdown-toc-grid">Grid</a>    <ul>
-  <li><a href="#how-it-works" id="markdown-toc-how-it-works">How it works</a></li>
-  <li><a href="#demo" id="markdown-toc-demo">Demo</a></li>
-  <li><a href="#centered" id="markdown-toc-centered">Centered</a></li>
-</ul>
-</li>
-</ul>
+<p>Open-sourcing Primer means sharing and learning with the community. There’s a lot we can improve upon in Primer, and help is always appreciated. While we don’t currently plan on building this out as a competitor to other front-end frameworks, we will occasionally add, remove, or modify things.</p>
 
-<h2 id="container">Container</h2>
+<h3 id="browser-support">Browser support</h3>
 
-<p>Center your page’s contents with a <code class="highlighter-rouge">.container</code>.</p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-<span class="c">&lt;!-- contents here --&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<p>Primer currently supports Internet Explorer 9+ and the latest two versions of Chrome, Safari, and Firefox on OS X and Windows. While not a responsive or mobile-focused project, Mobile Safari and Chrome for Android should render just fine. Support for Linux-based browsers is not strictly guaranteed, but accounted for whenever possible.</p>
 
-<p>The container applies <code class="highlighter-rouge">width: 980px;</code> and uses horizontal <code class="highlighter-rouge">margin</code>s to center it.</p>
+<h3 id="future-updates">Future updates</h3>
 
-<h2 id="grid">Grid</h2>
+<p>See the <a href="/roadmap">roadmap</a> for a rough outline on what’s slated for future versions of Primer.</p>
 
-<h3 id="how-it-works">How it works</h3>
-
-<p>The grid is pretty standard—you create rows with <code class="highlighter-rouge">.columns</code> and individual columns with a column class and fraction class. Here’s how it works:</p>
+<h3 id="dependencies">Dependencies</h3>
 
 <ul>
-<li>Add a <code class="highlighter-rouge">.container</code> to encapsulate everything and provide ample horizontal gutter space.</li>
-<li>Create your outer row to clear the floated columns with <code class="highlighter-rouge">&lt;div class="columns"&gt;</code>.</li>
-<li>Add your columns with individual <code class="highlighter-rouge">&lt;div class="column"&gt;</code>s.</li>
-<li>Add your fractional width classes to set the width of the columns (e.g., <code class="highlighter-rouge">.one-fourth</code>).</li>
+<li>Our styles are built with SCSS.</li>
+<li>Bower is used to link GitHub assets, namely our <a href="http://octicons.github.com">Octicons</a> icon font and Markdown styles.</li>
+<li>Autoprefixer is used to generate vendor-prefixed declarations and is handled via our Gruntfile.</li>
+<li>A custom plugin for snippet and example combos, <code class="highlighter-rouge">example.rb</code>, was created as a fork of Jekyll’s built-in <code class="highlighter-rouge">highlight</code> plugin.</li>
 </ul>
 
-<h3 id="demo">Demo</h3>
+<h3 id="who">Who</h3>
 
-<p>In practice, your columns will look like the example below.</p>
+<p>Currently maintained by <a href="https://twitter.com/mdo">@mdo</a>, <a href="https://twitter.com/jonrohan">@jonrohan</a>, and the GitHub CSS team.</p>
 
-<div class="docs-example clearfix"><div class="container">
-<div class="columns">
-<div class="one-fifth column">
-  .one-fifth
-</div>
-<div class="four-fifths column">
-  .four-fifths
-</div>
+<button class="btn btn-danger" type="button">Danger button</button>
+<button class="btn btn-sm btn-danger" type="button">Small danger button</button>
+
+<div class="form-actions">
+<button type="button" class="btn btn-primary">Save changes</button>
+<button type="button" class="btn">Cancel</button>
 </div>
 
-<div class="columns">
-<div class="one-fourth column">
-  .one-fourth
-</div>
-<div class="three-fourths column">
-  .three-fourths
-</div>
-</div>
+<h1>Commit tease</h1>
 
-<div class="columns">
-<div class="one-third column">
-  .one-third
-</div>
-<div class="two-thirds column">
-  .two-thirds
-</div>
-</div>
+<div class="commit-tease">
+      <span class="right">
+        <a class="commit-tease-sha" href="/primer/primer/commit/681bc4a418b55015476e51315171fa237969f036" data-pjax>
+          681bc4a
+        </a>
+        <relative-time datetime="2016-05-31T15:54:58Z">May 31, 2016</relative-time>
+      </span>
+      <div>
+        <img alt="@jonrohan" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/54012?v=3&amp;s=40" width="20" />
+        <a href="/jonrohan" class="user-mention" rel="contributor">jonrohan</a>
+          <a href="/primer/primer/commit/681bc4a418b55015476e51315171fa237969f036" class="message" data-pjax="true" title="Built primer-css-docs from commit e746c97 on branch docs_branch">Built primer-css-docs from commit</a> <a href="https://github.com/primer/primer/commit/e746c97ffd7056339fb033f70ae01dbb049b2f25" class="commit-link"><tt>e746c97</tt></a> <a href="/primer/primer/commit/681bc4a418b55015476e51315171fa237969f036" class="message" data-pjax="true" title="Built primer-css-docs from commit e746c97 on branch docs_branch">on branch docs_branch</a>
+      </div>
 
-<div class="columns">
-<div class="one-half column">
-  .one-half
-</div>
-<div class="one-half column">
-  .one-half
-</div>
-</div>
-</div></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"one-fifth column"</span><span class="nt">&gt;</span>
-  .one-fifth
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"four-fifths column"</span><span class="nt">&gt;</span>
-  .four-fifths
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+    <div class="commit-tease-contributors">
+      <button type="button" class="btn-link muted-link contributors-toggle" data-facebox="#blob_contributors_box">
+        <strong>2</strong>
+         contributors
+      </button>
+          <a class="avatar-link tooltipped tooltipped-s" aria-label="mdo" href="/primer/primer/commits/gh-pages/docs.css?author=mdo"><img alt="@mdo" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/98681?v=3&amp;s=40" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="jonrohan" href="/primer/primer/commits/gh-pages/docs.css?author=jonrohan"><img alt="@jonrohan" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/54012?v=3&amp;s=40" width="20" /> </a>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"one-fourth column"</span><span class="nt">&gt;</span>
-  .one-fourth
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"three-fourths column"</span><span class="nt">&gt;</span>
-  .three-fourths
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"one-third column"</span><span class="nt">&gt;</span>
-  .one-third
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"two-thirds column"</span><span class="nt">&gt;</span>
-  .two-thirds
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+    </div>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"one-half column"</span><span class="nt">&gt;</span>
-  .one-half
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"one-half column"</span><span class="nt">&gt;</span>
-  .one-half
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  </div>
 
-<h3 id="centered">Centered</h3>
+<h1>Subnav</h1>
+	<div class="subnav" data-pjax="">
+	        <a href="/primer/primer/issues/new" class="btn btn-primary right" role="button" data-hotkey="c">
+	          New issue
+	        </a>
 
-<p>Columns can be <a href="/utilities/#centering-content">centered</a> by adding <code class="highlighter-rouge">.centered</code> to the <code class="highlighter-rouge">.column</code> class.</p>
+	  <div class="left subnav-spacer-right" role="search">
+	      <div class="left select-menu js-menu-container js-select-menu subnav-search-context">
+	        <button class="btn select-menu-button js-menu-target" type="button" aria-haspopup="true">
+	          Filters
+	        </button>
+	        <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+	          <div class="select-menu-modal">
+	            <div class="select-menu-list">
+	                <a href="/primer/primer/issues?q=is%3Aopen" class="select-menu-item js-navigation-item">
+	                  <div class="select-menu-item-text">
+	                    Open issues and pull requests
+	                  </div>
+	                </a>
+	                <a href="/primer/primer/issues?q=is%3Aopen+is%3Aissue+author%3Apetrosh" class="select-menu-item js-navigation-item">
+	                  <div class="select-menu-item-text">
+	                    Your issues
+	                  </div>
+	                </a>
+	              <a href="/primer/primer/issues?q=is%3Aopen+is%3Apr+author%3Apetrosh" class="select-menu-item js-navigation-item">
+	                <div class="select-menu-item-text">
+	                  Your pull requests
+	                </div>
+	              </a>
+	              <a href="/primer/primer/issues?q=is%3Aopen+assignee%3Apetrosh" class="select-menu-item js-navigation-item">
+	                <div class="select-menu-item-text">
+	                  Everything assigned to you
+	                </div>
+	              </a>
+	              <a href="/primer/primer/issues?q=is%3Aopen+mentions%3Apetrosh" class="select-menu-item js-navigation-item">
+	                <div class="select-menu-item-text">
+	                  Everything mentioning you
+	                </div>
+	              </a>
+	              <a href="https://help.github.com/articles/searching-issues" class="select-menu-item js-navigation-item" target="_blank">
+	                <svg aria-hidden="true" class="octicon octicon-link-external select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+	                <div class="select-menu-item-text">
+	                  <strong>View advanced search syntax</strong>
+	                </div>
+	              </a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
 
-<div class="docs-example clearfix"><div class="columns">
-<div class="one-half column centered">
-.one-half
-</div>
-</div></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"one-half column centered"</span><span class="nt">&gt;</span>
-.one-half
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
+	    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/primer/primer/issues" class="subnav-search left" data-pjax="true" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+	      <input type="text" name="q" value="is:issue is:open " id="js-issues-search" class="form-control subnav-search-input input-contrast" placeholder="Search all issues" aria-label="Search all issues" data-hotkey="/">
+	      <svg aria-hidden="true" class="octicon octicon-search subnav-search-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"></path></svg>
+		</form>  </div>
+
+
+		<div class="subnav-links left" role="navigation">
+		  <a href="/primer/primer/labels" class="js-selected-navigation-item subnav-item" data-selected-links="repo_labels /primer/primer/labels">Labels</a>
+		  <a href="/primer/primer/milestones" class="js-selected-navigation-item subnav-item" data-selected-links="repo_milestones /primer/primer/milestones">Milestones</a>
+		</div>
+
+	</div>
+
+<p>
+	End
+</p>
+
 </div>
