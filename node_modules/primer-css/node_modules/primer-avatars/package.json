@@ -1,0 +1,73 @@
+{
+  "version": "0.2.3",
+  "name": "primer-avatars",
+  "description": "Basic styles for user profile avatars.",
+  "homepage": "http://primercss.io/",
+  "author": {
+    "name": "GitHub, Inc."
+  },
+  "license": "MIT",
+  "style": "index.scss",
+  "files": [
+    "index.scss",
+    "lib",
+    "build"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primer/avatars.git"
+  },
+  "bugs": {
+    "url": "https://github.com/primer/avatars/issues"
+  },
+  "scripts": {
+    "setup": "if [ ! -d \"node_modules\" ]; then npm install; fi",
+    "build": "node-sass index.scss --include-path node_modules --output-style compressed | postcss -c .postcss.json -o build/build.css",
+    "prepublish": "npm run setup && npm run build",
+    "test": "stylelint **/*.scss -c .stylelintrc.json -s scss"
+  },
+  "dependencies": {
+    "primer-support": "*"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "node-sass": "^3.7.0",
+    "postcss-cli": "^2.5.2",
+    "stylelint": "^6.6.0",
+    "stylelint-config-primer": "^1.0.0"
+  },
+  "keywords": [
+    "avatars",
+    "primer",
+    "css",
+    "github",
+    "primercss"
+  ],
+  "gitHead": "a668642700593c938c0dc1111617b06712a36928",
+  "_id": "primer-avatars@0.2.3",
+  "_shasum": "1cb211c0a1337e8f14bb166226a16dab7fe1a797",
+  "_from": "primer-avatars@*",
+  "_npmVersion": "3.8.6",
+  "_nodeVersion": "5.12.0",
+  "_npmUser": {
+    "name": "jonrohan",
+    "email": "yes@jonrohan.codes"
+  },
+  "dist": {
+    "shasum": "1cb211c0a1337e8f14bb166226a16dab7fe1a797",
+    "tarball": "https://registry.npmjs.org/primer-avatars/-/primer-avatars-0.2.3.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "jonrohan",
+      "email": "yes@jonrohan.codes"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/primer-avatars-0.2.3.tgz_1467722840523_0.18730110977776349"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/primer-avatars/-/primer-avatars-0.2.3.tgz",
+  "readme": "ERROR: No README data found!"
+}

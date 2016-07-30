@@ -1,0 +1,74 @@
+{
+  "version": "0.3.0",
+  "name": "primer-buttons",
+  "description": "A collection of buttons used for primary and secondary actions.",
+  "homepage": "http://primercss.io/",
+  "author": {
+    "name": "GitHub, Inc."
+  },
+  "license": "MIT",
+  "style": "index.scss",
+  "files": [
+    "index.scss",
+    "lib",
+    "build"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primer/buttons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/primer/buttons/issues"
+  },
+  "scripts": {
+    "setup": "if [ ! -d \"node_modules\" ]; then npm install; fi",
+    "build": "node-sass index.scss --include-path node_modules --output-style compressed | postcss -c .postcss.json -o build/build.css",
+    "prepublish": "npm run setup && npm run build",
+    "test": "npm run build && stylelint **/*.scss -c .stylelintrc.json -s scss"
+  },
+  "dependencies": {
+    "primer-support": "*"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "node-sass": "^3.7.0",
+    "postcss-cli": "^2.5.2",
+    "stylelint": "^6.6.0",
+    "stylelint-config-primer": "^1.0.0"
+  },
+  "keywords": [
+    "primer",
+    "css",
+    "github",
+    "primercss",
+    "buttons",
+    "styles"
+  ],
+  "gitHead": "8409f86844d2a67f8357ec63eee9c33c2967274e",
+  "_id": "primer-buttons@0.3.0",
+  "_shasum": "3b23d9608c08e1cbd7ea838b197f438ce12c95a0",
+  "_from": "primer-buttons@*",
+  "_npmVersion": "3.8.6",
+  "_nodeVersion": "5.12.0",
+  "_npmUser": {
+    "name": "jonrohan",
+    "email": "yes@jonrohan.codes"
+  },
+  "dist": {
+    "shasum": "3b23d9608c08e1cbd7ea838b197f438ce12c95a0",
+    "tarball": "https://registry.npmjs.org/primer-buttons/-/primer-buttons-0.3.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "jonrohan",
+      "email": "yes@jonrohan.codes"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/primer-buttons-0.3.0.tgz_1468514128854_0.3434600511100143"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/primer-buttons/-/primer-buttons-0.3.0.tgz",
+  "readme": "ERROR: No README data found!"
+}

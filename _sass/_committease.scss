@@ -1,0 +1,67 @@
+.commit-tease {
+    position: relative;
+    padding: 10px;
+    margin-bottom: -1px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #68777d;
+    background-color: #f2f9fc;
+    border: 1px solid #c9e6f2;
+    border-radius: 3px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.commit-tease-sha {
+    display: inline-block;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 90%;
+    color: #445055;
+}
+
+.commit-tease .avatar {
+    margin-top: -1px;
+}
+
+.commit-tease .message {
+    color: inherit;
+}
+
+.commit-link {
+    font-weight: normal;
+    color: $brand-blue;
+}
+
+.commit-tease-contributors {
+    padding: 5px 10px;
+    margin: 10px -10px -10px;
+    background-color: #fff;
+    border-top: 1px solid #c9e6f2;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.commit-tease-contributors .contributors-toggle {
+    float: left;
+    margin-right: 10px;
+}
+.commit-tease .muted-link {
+    color: inherit;
+}
+
+
+.commit-tease-contributors .avatar-link {
+    float: left;
+    margin-right: 3px;
+}
+
+.commit-tease-contributors::before {
+    display: table;
+    content: "";
+}
+
+.commit-tease-contributors::after {
+    display: table;
+    clear: both;
+    content: "";
+}

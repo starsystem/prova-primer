@@ -1,0 +1,45 @@
+.pagehead {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $border-light-grey;
+  margin-bottom: 1.5rem;
+  background-color: $border-ultralight;
+  margin-top: -1.5rem;
+  & .pagehead-nav {
+    float: right;
+    margin-bottom: -20px;
+    & .pagehead-nav-item {
+      float: left;
+      padding: 6px 10px 21px;
+      margin-left: 20px;
+      font-size: 14px;
+      color: $brand-gray;
+      &.selected {
+        color: #333;
+        border-bottom: 2px solid $brand-blue;
+      }
+    }
+  }
+  & h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 28px;
+	& a {
+		padding: 21px;
+		font-weight: 200;
+		letter-spacing: 1px;
+		&:hover {
+			background-color: #fff;
+			text-decoration: none;
+			border-bottom: 2px solid white;
+		}
+		&.selected {
+			border-bottom: 2px solid $brand-blue;
+		}
+	}
+  }
+}
