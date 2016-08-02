@@ -1,0 +1,87 @@
+// Scroll bar always present
+html
+	overflow-y: scroll
+
+// Checkbox and Radio Cursor pointer
+input[type="checkbox"]:hover, input[type="radio"]:hover
+	cursor: pointer
+
+// Remove figure (code blocks) side margin (40px)
+figure
+	margin: 1em 0
+
+// add state
+.state-reverted
+	background-color: $status-reverted
+
+// New footer
+footer
+	@extend .footer
+	position: relative
+	border-bottom: 1px solid $border-light-grey
+	background-color: $border-ultralight
+	margin-bottom: 0
+
+// Blankslate h3 margins
+.docs-example p, .docs-example h1, .docs-example h2, .docs-example h3, .docs-example h4, .docs-example h5, .docs-example h6,
+.blankslate p, .blankslate h1, .blankslate h2, .blankslate h3, .blankslate h4, .blankslate h5, .blankslate h6
+	margin-top: 0
+	margin-bottom: 0
+
+// Skin colors
+// ARRAY
+$page-colours: (base, $base), (brandy, $brandy), (lightred, $lightred), (forest, $forest), (melma, $melma), (cave, $cave), (blood, $blood)
+
+@mixin color-block($colore)
+	a
+		color: $colore
+		&:active
+			opacity: 0.5
+
+	.masthead a
+		color: rgba(255, 255, 255, 0.5)
+		&:hover
+			color: $white
+
+	.masthead,
+	.menu-item.selected::before,
+	.filter-item.selected,
+	.btn-outline:hover,
+	.btn-outline:active,
+	.btn-outline.selected,
+	.btn-outline.zeroclipboard-is-hover,
+	.btn-outline.zeroclipboard-is-active
+		background-color: $colore
+
+	.pagehead .pagehead-nav .pagehead-nav-item.selected:hover,
+	.pagehead h1 a.selected,
+	.btn-outline:hover,
+	.btn-outline:active,
+	.btn-outline.selected,
+	.btn-outline.zeroclipboard-is-hover,
+	.btn-outline.zeroclipboard-is-active
+		border-color: $colore
+		text-decoration: none
+
+	.btn-outline:hover,
+	.btn-outline:active,
+	.btn-outline.selected,
+	.btn-outline.zeroclipboard-is-hover,
+	.btn-outline.zeroclipboard-is-active
+		color: $white
+
+	.btn-outline,
+	.btn-outline:hover .counter,
+	.btn-outline:active .counter,
+	.btn-outline.selected .counter,
+	.btn-outline.zeroclipboard-is-hover .counter,
+	.btn-outline.zeroclipboard-is-active .counter
+		color: $colore
+
+@include color-block($base)
+
+@each $brand, $color in $page-colours
+	.#{$brand}
+		&.state
+			background-color: $color
+		@include color-block($color)

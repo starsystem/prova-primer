@@ -1,14 +1,14 @@
 ---
 ---
 @import
-	"font/octicons.css",
+	"font/octicons.css", // octicons font folder from ./node_modules/octicons/
 	"build.css", // primer build.css from ./node_modules/primer-css/build/
-	"variables",
-	"docs",
+	"variables", // new variabiles + brand-colors
+	"docs", // primer addons
 	"organizations",
 	"pagehead",
 	"committease",
 	"subnav",
-	"syntax",
+	"syntax", // code highlight
 	"corrections"
 ;

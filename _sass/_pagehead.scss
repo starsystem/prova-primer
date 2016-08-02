@@ -18,7 +18,7 @@
       color: $brand-gray;
       &.selected {
         color: #333;
-        border-bottom: 2px solid $brand-blue;
+        border-bottom: 2px solid transparent;
       }
     }
   }
@@ -38,7 +38,7 @@
 			border-bottom: 2px solid white;
 		}
 		&.selected {
-			border-bottom: 2px solid $brand-blue;
+			border-bottom: 2px solid transparent;
 		}
 	}
   }
