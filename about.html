@@ -2,6 +2,9 @@
 layout: primer_full
 title: About
 permalink: /about
+jumbotron:
+    - ABOUT PAGE
+    - Quo Vadis e Che Vordì
 ---
 
 <h1 class="page-title">
@@ -9,6 +12,23 @@ About
 </h1>
 <div class="markdown-body">
 <p>Learn more about this styleguide, particularly how it’s built and who maintains it.</p>
+
+<div class="container about-that">
+  <div class="columns">
+	<div class="one-third column">
+	  <h2>HTML</h2>
+	  <p>Primer is the basecoat of GitHub, made by nerds just like you who share a passion for HTML and CSS.</p>
+	</div>
+	<div class="one-third column">
+	  <h2>Javascript</h2>
+	  <p>Available for use under the MIT license and built with open source projects like SCSS, Jekyll, Grunt, and more.</p>
+	</div>
+	<div class="one-third column">
+	  <h2>Theme</h2>
+	  <p>Includes a small Gruntfile for compiling our SCSS, Autoprefixer for vendor prefixes, and Parker for CSS stats.</p>
+	</div>
+  </div>
+</div>
 
 <h3 id="what-and-why">What and why</h3>
 
@@ -42,7 +62,6 @@ About
 
 <p>Currently maintained by <a href="https://twitter.com/mdo">@mdo</a>, <a href="https://twitter.com/jonrohan">@jonrohan</a>, and the GitHub CSS team.</p>
 
-<button class="btn btn-danger" type="button">Danger button</button>
 <button class="btn btn-sm btn-danger" type="button">Small danger button</button>
 
 <div class="form-actions">
@@ -50,7 +69,7 @@ About
 <button type="button" class="btn">Cancel</button>
 </div>
 
-<h1>Commit tease</h1>
+<h3>Commit tease</h3>
 
 <div class="commit-tease">
       <span class="right">
@@ -78,71 +97,67 @@ About
 
   </div>
 
-<h1>Subnav</h1>
-	<div class="subnav" data-pjax="">
-	        <a href="/primer/primer/issues/new" class="btn btn-primary right" role="button" data-hotkey="c">
-	          New issue
-	        </a>
+<h3>Subnav</h3>
+</div>
+<br>
+<div class="subnav" data-pjax="">
+		<a href="/primer/primer/issues/new" class="btn btn-primary right" role="button" data-hotkey="c">
+		  New issue
+		</a>
 
-	  <div class="left subnav-spacer-right" role="search">
-	      <div class="left select-menu js-menu-container js-select-menu subnav-search-context">
-	        <button class="btn select-menu-button js-menu-target" type="button" aria-haspopup="true">
-	          Filters
-	        </button>
-	        <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
-	          <div class="select-menu-modal">
-	            <div class="select-menu-list">
-	                <a href="/primer/primer/issues?q=is%3Aopen" class="select-menu-item js-navigation-item">
-	                  <div class="select-menu-item-text">
-	                    Open issues and pull requests
-	                  </div>
-	                </a>
-	                <a href="/primer/primer/issues?q=is%3Aopen+is%3Aissue+author%3Apetrosh" class="select-menu-item js-navigation-item">
-	                  <div class="select-menu-item-text">
-	                    Your issues
-	                  </div>
-	                </a>
-	              <a href="/primer/primer/issues?q=is%3Aopen+is%3Apr+author%3Apetrosh" class="select-menu-item js-navigation-item">
-	                <div class="select-menu-item-text">
-	                  Your pull requests
-	                </div>
-	              </a>
-	              <a href="/primer/primer/issues?q=is%3Aopen+assignee%3Apetrosh" class="select-menu-item js-navigation-item">
-	                <div class="select-menu-item-text">
-	                  Everything assigned to you
-	                </div>
-	              </a>
-	              <a href="/primer/primer/issues?q=is%3Aopen+mentions%3Apetrosh" class="select-menu-item js-navigation-item">
-	                <div class="select-menu-item-text">
-	                  Everything mentioning you
-	                </div>
-	              </a>
-	              <a href="https://help.github.com/articles/searching-issues" class="select-menu-item js-navigation-item" target="_blank">
-	                <svg aria-hidden="true" class="octicon octicon-link-external select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
-	                <div class="select-menu-item-text">
-	                  <strong>View advanced search syntax</strong>
-	                </div>
-	              </a>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-
-	    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/primer/primer/issues" class="subnav-search left" data-pjax="true" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
-	      <input type="text" name="q" value="is:issue is:open " id="js-issues-search" class="form-control subnav-search-input input-contrast" placeholder="Search all issues" aria-label="Search all issues" data-hotkey="/">
-	      <svg aria-hidden="true" class="octicon octicon-search subnav-search-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"></path></svg>
-		</form>  </div>
-
-
-		<div class="subnav-links left" role="navigation">
-		  <a href="/primer/primer/labels" class="js-selected-navigation-item subnav-item" data-selected-links="repo_labels /primer/primer/labels">Labels</a>
-		  <a href="/primer/primer/milestones" class="js-selected-navigation-item subnav-item" data-selected-links="repo_milestones /primer/primer/milestones">Milestones</a>
+  <div class="left subnav-spacer-right" role="search">
+	  <div class="left select-menu js-menu-container js-select-menu subnav-search-context">
+		<button class="btn select-menu-button js-menu-target" type="button" aria-haspopup="true">
+		  Filters
+		</button>
+		<div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+		  <div class="select-menu-modal">
+			<div class="select-menu-list">
+				<a href="/primer/primer/issues?q=is%3Aopen" class="select-menu-item js-navigation-item">
+				  <div class="select-menu-item-text">
+					Open issues and pull requests
+				  </div>
+				</a>
+				<a href="/primer/primer/issues?q=is%3Aopen+is%3Aissue+author%3Apetrosh" class="select-menu-item js-navigation-item">
+				  <div class="select-menu-item-text">
+					Your issues
+				  </div>
+				</a>
+			  <a href="/primer/primer/issues?q=is%3Aopen+is%3Apr+author%3Apetrosh" class="select-menu-item js-navigation-item">
+				<div class="select-menu-item-text">
+				  Your pull requests
+				</div>
+			  </a>
+			  <a href="/primer/primer/issues?q=is%3Aopen+assignee%3Apetrosh" class="select-menu-item js-navigation-item">
+				<div class="select-menu-item-text">
+				  Everything assigned to you
+				</div>
+			  </a>
+			  <a href="/primer/primer/issues?q=is%3Aopen+mentions%3Apetrosh" class="select-menu-item js-navigation-item">
+				<div class="select-menu-item-text">
+				  Everything mentioning you
+				</div>
+			  </a>
+			  <a href="https://help.github.com/articles/searching-issues" class="select-menu-item js-navigation-item" target="_blank">
+				<svg aria-hidden="true" class="octicon octicon-link-external select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+				<div class="select-menu-item-text">
+				  <strong>View advanced search syntax</strong>
+				</div>
+			  </a>
+			</div>
+		  </div>
 		</div>
+	  </div>
 
+	<!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/primer/primer/issues" class="subnav-search left" data-pjax="true" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+	  <input type="text" name="q" value="is:issue is:open " id="js-issues-search" class="form-control subnav-search-input input-contrast" placeholder="Search all issues" aria-label="Search all issues" data-hotkey="/">
+	  <svg aria-hidden="true" class="octicon octicon-search subnav-search-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"></path></svg>
+	</form>  </div>
+
+
+	<div class="subnav-links left" role="navigation">
+	  <a href="/primer/primer/labels" class="js-selected-navigation-item subnav-item" data-selected-links="repo_labels /primer/primer/labels">Labels</a>
+	  <a href="/primer/primer/milestones" class="js-selected-navigation-item subnav-item" data-selected-links="repo_milestones /primer/primer/milestones">Milestones</a>
 	</div>
-
-<p>
-	End
-</p>
 
 </div>

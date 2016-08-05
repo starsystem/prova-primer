@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
-
-<div class="columns docs-layout">
-	<div class="column markdown-body">
-		{{ content }}
+<div class="container">
+	<div class="columns docs-layout">
+		<div class="column four-fourths {% assign extension = page.path | slice: -2, 2 %}{% if extension == 'md' %}markdown-body{% endif %}">
+			{{ content }}
+		</div>
 	</div>
 </div>

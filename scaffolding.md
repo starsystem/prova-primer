@@ -23,6 +23,18 @@ Main `HTML`
 </header>
 ```
 
+**Jumbotron**
+
+```html
+<div class="jumbotron">
+	<div class="container">
+		<h1>Title</h1>
+		<p>Description</p>
+		<a href="/scaffolding" class="btn btn-reverse">Read the docs</a>
+	</div>
+</div>
+```
+
 **Paghead**
 
 ```html

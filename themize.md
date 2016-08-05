@@ -25,17 +25,6 @@ permalink: /themize
 </div>
 
 <h5>Javascript code</h5>
-
-```js
-var butz = document.querySelectorAll('.js-themize button');
-for (var i = 0; i < butz.length; i++) {
-	butz[i].addEventListener('click', function (e) {
-		e.preventDefault();
-		document.body.setAttribute('class', '');
-		document.body.classList.add(e.target.textContent);
-	});
-}
-```
 <script type="text/javascript">
 	var butz = document.querySelectorAll('.js-themize button');
 	for (var i = 0; i < butz.length; i++) {
@@ -46,3 +35,13 @@ for (var i = 0; i < butz.length; i++) {
 		});
 	}
 </script>
+```js
+var butz = document.querySelectorAll('.js-themize button');
+for (var i = 0; i < butz.length; i++) {
+	butz[i].addEventListener('click', function (e) {
+		e.preventDefault();
+		document.body.setAttribute('class', '');
+		document.body.classList.add(e.target.textContent);
+	});
+}
+```
